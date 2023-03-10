@@ -20,6 +20,8 @@
     <style type="text/css">
         body{
             font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
         }
         .text-main{
             color: #DB2777;
@@ -30,9 +32,14 @@
         .image-display{
             width: 100%;
         }
+        .text-sm{
+            font-size: 14px;
+            
+        }
+        
     </style>
 
-    <title>Camerai</title>
+    <title>BYOD - Bring Your Own Data</title>
 
 
   </head>
@@ -40,10 +47,10 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-white border-bottom">
-        <div class="container-fluid">
+        <div class="container-fluid pt-3">
           <a class="navbar-brand" href="#">
-            <img src="{% static '/assets/logo.jpg' %}" alt="" width="24" height="24" class="d-inline-block align-text-top">
-            Camerai
+            <img src="{% static '/assets/logo.jpg' %}" alt="" width="24" height="24" class="shadow-sm d-inline-block align-text-top">
+            BYOD - Bring Your Own Data
           </a>
         </div>
       </nav>
@@ -52,23 +59,16 @@
       <!-- Main  -->
       <main class="mt-10" style="padding:15px">
         <br>
-        <h5>Image redefined</h5>
+        <h5>Information re-defined</h5>
 
         <br>
-        <p class="text-muted">Camerai Image Generator is an app that uses artificial intelligence to create unique images. It allows users to quickly and easily generate high-quality images with a few simple clicks. The app is perfect for graphic designers, photographers, and anyone looking to create stunning visuals.</p>
+        <p class="text-muted text-sm">BYOD (Bring Your Own Data) a powerful tool that uses artificial intelligence to help you fine-tune data from your word documents. With Boyd, you can easily extract and analyze data from your documents, such as names, dates, and numbers, and then use our intuitive interface to make adjustments and corrections as needed. 
+            <br><br>
+            Our AI algorithms are designed to learn from your input, so the more you use the app, the smarter it becomes. Whether you're a business professional, researcher, or student, Boyd is the perfect tool for anyone who needs to work with large amounts of data in their word documents.
+        </p>
 
         <!-- Form button  -->
         <label class="text-muted text-bold">Select an image</label>
-
-        <form method="post" action="" enctype="multipart/form-data">{% csrf_token %}
-            <div class="input-group mb-3 mt-3">
-                <input type="file" class="form-control" name="image" required>
-                <!-- <label class="input-group-text " for="inputGroupFile02">Select file</label> -->
-            </div>
-
-            <button type="submit" class="btn bg-main text-white mt-2">Submit</button>
-        </form>
-
 
 
       </main>
